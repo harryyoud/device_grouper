@@ -41,7 +41,7 @@ MALLOC_SVELTE := true
 USE_CLANG_PLATFORM_BUILD := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME)
+BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_CONFIG := grouper_defconfig
 TARGET_KERNEL_SOURCE := kernel/nvidia/tegra3
@@ -72,4 +72,4 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/grouper/bluetooth
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.grouper
 
 # Security
-BOARD_SEPOLICY_DIRS += device/asus/grouper/sepolicy
+# BOARD_SEPOLICY_DIRS += device/asus/grouper/sepolicy
