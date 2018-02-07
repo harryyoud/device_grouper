@@ -87,7 +87,8 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    lights.grouper
+    lights.grouper \
+    loggy.sh
 
 # Sensors
 PRODUCT_COPY_FILES += \
