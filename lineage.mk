@@ -30,6 +30,9 @@ $(call inherit-product, device/asus/grouper/device.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+# Inherit Android Go config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := grouper
 PRODUCT_NAME := lineage_grouper
