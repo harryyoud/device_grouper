@@ -22,7 +22,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/lineage/config/common_mini_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/grouper/device.mk)
@@ -41,6 +41,8 @@ PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:5.1/LMY47D/1743759:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 5.1 LMY47D 1743759 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi PRIVATE_BUILD_DESC="nakasi-user 5.1 LMY47D 1743759 release-keys"
 
+# Set fingerprint for vendor and system
+BUILD_FINGERPRINT := "google/nakasi/grouper:5.1/LMY47D/1743759:user/release-keys"
 
